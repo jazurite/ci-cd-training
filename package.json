@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "act": "act -s GITHUB_TOKEN=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 -P ubuntu-latest=catthehacker/ubuntu:full-latest --secret-file .env --container-architecture=linux/amd64"
+    "act": "act -b -P ubuntu-latest=catthehacker/ubuntu:full-latest --secret-file .env --container-architecture=linux/amd64"
   }
 }
