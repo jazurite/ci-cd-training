@@ -2,8 +2,8 @@ name: Shopify Sync Live
 
 on:
   pull_request:
-    types: [opened, synchronize]
-    branches: [main]
+    types: [ opened, reopened, synchronize]
+    branches: [ main ]
 permissions:
   contents: write
 jobs:
@@ -43,6 +43,3 @@ jobs:
           git add .
           git commit -m "Update from Live Theme"
           git push
-      - name: Check for Conflicts
-        run: |
-          echo "Check for conflicts manually or implement a notification here."
