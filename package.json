@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "act": "act -P ubuntu-latest=catthehacker/ubuntu:full-latest --secret-file .env --container-architecture=linux/amd64"
+    "act": "act -b -P ubuntu-latest=catthehacker/ubuntu:full-latest --secret-file .env --container-architecture=linux/amd64"
   }
 }
