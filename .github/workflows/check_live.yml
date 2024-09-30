@@ -2,11 +2,8 @@ name: Shopify Sync Live
 
 on:
   pull_request:
-    types:
-      - opened
-      - synchronize
-    branches:
-      - main
+    types: [opened, synchronize]
+    branches: [main]
 permissions:
   contents: write
 jobs:
@@ -16,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: "main"
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
